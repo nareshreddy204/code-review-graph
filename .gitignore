@@ -20,6 +20,7 @@ env/
 *.db-wal
 *.db-shm
 .code-review-graph.db
+.code-review-graph.html
 
 # IDE
 .idea/

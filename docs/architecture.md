@@ -25,7 +25,9 @@
 │  │  ├── query_graph_tool                      │              │
 │  │  ├── get_review_context_tool               │              │
 │  │  ├── semantic_search_nodes_tool            │              │
-│  │  └── list_graph_stats_tool                 │              │
+│  │  ├── embed_graph_tool                      │              │
+│  │  ├── list_graph_stats_tool                 │              │
+│  │  └── get_docs_section_tool                 │              │
 │  └────────────────┬───────────────────────────┘              │
 └───────────────────┼──────────────────────────────────────────┘
                     │
@@ -92,6 +94,10 @@ Tree-sitter provides language-agnostic AST access. The parser:
 5. Resolves imports to module paths
 
 This approach is more robust than tree-sitter queries across grammar versions.
+
+## Visualization
+
+The `visualization.py` module generates an interactive D3.js force-directed graph as a self-contained HTML file. It reads all nodes and edges from the SQLite graph store and renders them in the browser, allowing developers to visually explore code relationships, filter by node kind, and inspect dependencies.
 
 ## Impact Analysis Algorithm
 

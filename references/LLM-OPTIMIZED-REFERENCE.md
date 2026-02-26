@@ -1,10 +1,10 @@
-# LLM-OPTIMIZED REFERENCE — code-review-graph v1.1.0
+# LLM-OPTIMIZED REFERENCE — code-review-graph v1.4.0
 
 Claude Code: Read ONLY the exact `<section>` you need. Never load the whole file.
 
 <section name="usage">
-Quick install: /plugin marketplace add tirth8205/code-review-graph
-Then: /plugin install code-review-graph
+Quick install: pip install code-review-graph
+Then: code-review-graph init && code-review-graph build
 First run: /code-review-graph:build-graph --full
 After that use only delta/pr commands.
 </section>
@@ -24,7 +24,7 @@ Never include full files unless explicitly asked.
 <section name="commands">
 MCP tools: build_or_update_graph_tool, get_impact_radius_tool, query_graph_tool, get_review_context_tool, semantic_search_nodes_tool, embed_graph_tool, list_graph_stats_tool, get_docs_section_tool
 Skills: build-graph, review-delta, review-pr
-CLI: code-review-graph [update|build|status|watch]
+CLI: code-review-graph [init|build|update|status|watch|visualize|serve]
 </section>
 
 <section name="legal">

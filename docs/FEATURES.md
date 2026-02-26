@@ -1,10 +1,26 @@
 # Features
 
-## v1.1.0 (Current)
+## v1.4.0 (Current)
+- **`init` command**: Automatic `.mcp.json` setup for Claude Code integration
+- **Interactive D3.js graph visualization**: `code-review-graph visualize` generates an HTML graph you can explore in-browser
+- **Documentation overhaul**: Comprehensive docs audit across all reference files
+
+## v1.3.0
+- **Python version check with Docker fallback**: Automatically detects Python 3.10+ and suggests Docker if unavailable
+- **Universal install**: `pip install code-review-graph` — no git clone needed
+- **CLI entry point**: `code-review-graph` command available system-wide after pip install
+
+## v1.2.0
+- **Logging improvements**: Structured logging throughout the codebase
+- **Watch debounce**: Smarter file-change detection in watch mode
+- **tools.py fixes**: Bug fixes and reliability improvements for MCP tools
+- **CI coverage**: GitHub Actions CI/CD pipeline with test coverage reporting
+
+## v1.1.0
 - **Watch mode**: `code-review-graph watch` — auto-rebuilds graph on file changes
 - **Vector embeddings**: Optional `pip install .[embeddings]` for semantic code search
 - **Go, Rust, Java verified**: 12+ languages with dedicated test coverage
-- **47 tests passing**, 7 MCP tools registered
+- **47 tests passing**, 8 MCP tools registered
 - README badges and cleaner install flow
 
 ## v1.0.0 (Foundation)

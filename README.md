@@ -126,6 +126,7 @@ For detailed usage instructions, see [docs/USAGE.md](docs/USAGE.md).
 | **Graph** | `code_review_graph/graph.py` | SQLite-backed knowledge graph with NetworkX for traversal queries. |
 | **Incremental** | `code_review_graph/incremental.py` | Git-aware delta detection. Re-parses only changed files + dependents. |
 | **MCP Server** | `code_review_graph/main.py` | Exposes 8 tools to Claude Code via the Model Context Protocol. |
+| **Visualization** | `code_review_graph/visualization.py` | D3.js interactive graph visualization generator. |
 | **Skills** | `skills/` | Three review workflows: `build-graph`, `review-delta`, `review-pr`. |
 | **Hooks** | `hooks/` | Auto-updates the graph on file edits and git commits. |
 

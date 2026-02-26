@@ -101,4 +101,7 @@ code-review-graph init
 
 # Generate graph visualization
 code-review-graph visualize
+
+# Start MCP server
+code-review-graph serve
 ```
