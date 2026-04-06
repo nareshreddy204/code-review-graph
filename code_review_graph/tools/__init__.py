@@ -44,7 +44,10 @@ from ._common import (
 )
 
 # -- build ------------------------------------------------------------------
-from .build import build_or_update_graph
+from .build import build_or_update_graph, run_postprocess
+
+# -- context ----------------------------------------------------------------
+from .context import get_minimal_context
 
 # -- community_tools --------------------------------------------------------
 from .community_tools import (
@@ -88,6 +91,9 @@ __all__ = [
     "_validate_repo_root",
     # build
     "build_or_update_graph",
+    "run_postprocess",
+    # context
+    "get_minimal_context",
     # community_tools
     "get_architecture_overview_func",
     "get_community_func",
